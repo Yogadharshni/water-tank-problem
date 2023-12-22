@@ -1,0 +1,29 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Let's measure the water</title>
+   
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://fastly.jsdelivr.net/npm/echarts@5.3.3/dist/echarts.min.js"></script>
+</head>
+<body>
+    <div class="header"><h1>Let's measure the water</h1></div>
+    <div class="input-div">
+        <input type="text" id="resultArray" name="resultArray" placeholder="0,4,0,0,0,6,0,6,4,0">
+      
+        <button class="button" id="value-btn" onclick="getValue()">Compute Water</button>
+        
+    </div>
+    <div class="first-chart-div">
+        <div id="first-result"></div>
+    </div>
+    <div class="second-chart-div">
+        <h4><span style="margin-left: 120px;" id="waterunit"></span></h4>
+        <div id="second-result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
